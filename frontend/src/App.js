@@ -206,6 +206,8 @@ const Hero = () => {
                   src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643" 
                   alt="Professional Translation Services" 
                   className="w-full h-auto"
+                  loading="eager"
+                  fetchpriority="high"
                 />
               </div>
             </div>
