@@ -122,11 +122,12 @@ const Navbar = () => {
 
 // Navigation Links Component
 const NavLinks = ({ isMobile = false, setIsOpen }) => {
+  const { t } = useTranslation();
   const links = [
-    { name: "Home", target: "home" },
-    { name: "Services", target: "services" },
-    { name: "About", target: "about" },
-    { name: "FAQ", target: "faq" },
+    { name: t('navigation.home'), target: "home" },
+    { name: t('navigation.services'), target: "services" },
+    { name: t('navigation.about'), target: "about" },
+    { name: t('navigation.faq'), target: "faq" },
   ];
 
   const baseClasses = "font-medium text-white/80 hover:text-white transition-colors";
@@ -135,7 +136,7 @@ const NavLinks = ({ isMobile = false, setIsOpen }) => {
 
   return links.map((link) => (
     <ScrollLink
-      key={link.name}
+      key={link.target}
       to={link.target}
       smooth={true}
       duration={500}
