@@ -151,9 +151,11 @@ const Hero = () => {
         style={{ y }}
       >
         <img
-          src="https://images.unsplash.com/photo-1719496175644-a9abbeb7d2f6" 
+          src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4" 
           alt="Abstract Technology Background"
           className="w-full h-full object-cover"
+          loading="eager"
+          fetchpriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-neutral-dark/70 via-primary-900/60 to-neutral-dark"></div>
       </motion.div>
