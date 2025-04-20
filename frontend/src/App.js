@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link as ScrollLink } from "react-scroll";
+import { useTranslation } from "react-i18next";
 import "./App.css";
 import { 
   FiGlobe, 
@@ -18,6 +19,7 @@ import {
   FiTwitter,
   FiFacebook
 } from "react-icons/fi";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
